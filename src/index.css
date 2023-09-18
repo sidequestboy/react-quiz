@@ -115,6 +115,29 @@ progress {
   border-radius: 100px;
 }
 
+.difficulty-select {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.btn.easy.selected:not([disabled]),
+.btn.easy.btn:not([disabled]):hover {
+  background-color: #2f9e44;
+}
+
+.btn.medium.selected:not([disabled]),
+.btn.medium:not([disabled]):hover {
+  background-color: #f59f00;
+}
+
+.btn.hard.selected:not([disabled]),
+.btn.hard:not([disabled]):hover {
+  background-color: #f03e3e;
+}
+
 .btn {
   display: block;
   font-family: inherit;
